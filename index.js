@@ -17,8 +17,8 @@ app.use(express.static(__dirname))
 app.use(Gun.serve);
 app.use(cors());
 
-let https = require('https').createServer({ key: fs.readFileSync('/home/connor/Projects/GunDB/server.key'), cert: fs.readFileSync('/home/connor/Projects/GunDB/server.cert') }, app);
-let server = https.listen(port);
+// let https = require('https').createServer({ key: fs.readFileSync('/home/connor/Projects/GunDB/server.key'), cert: fs.readFileSync('/home/connor/Projects/GunDB/server.cert') }, app);
+let server = app.listen(port);
 let gun = Gun({
   file: `data`,
   web: server,
