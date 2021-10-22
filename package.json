@@ -1,0 +1,12 @@
+{
+  "name": "GunDB",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "gun": "^0.2020.1235",
+    "gun-host": "https://github.com/QXIP/gun-host"
+  }
+}
